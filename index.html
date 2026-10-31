@@ -274,12 +274,12 @@
        <div class="music-panel-top"><span>♫ OUR WEDDING SONG</span><button id="music-close" type="button" aria-label="Close music player">×</button></div>
        <p class="music-song-title">శ్రీరస్తు శుభమస్తు</p>
        <p class="music-song-caption">Sree Rastu Shubhamastu · Pelli Pustakam</p>
-       <audio id="bg-music" controls loop preload="metadata" src="wedding-song.mp3" playsinline aria-label="Wedding background music"></audio>
-       <p>Tap the ♫ button once to start background music. If the song does not start, use the native audio controls above or the links below.</p>
-       <a id="music-direct" href="wedding-song.mp3" target="_blank" rel="noopener noreferrer">▶ Open the uploaded MP3 directly ↗</a>
+       <audio id="bg-music" controls loop preload="auto" src="wedding-song.mp4" playsinline aria-label="Wedding background music"></audio>
+       <p>Music starts when you open the invitation with the SA / CLICK seal. Use the ♫ button to pause or resume. If your browser blocks playback, use the player or links below.</p>
+       <a id="music-direct" href="wedding-song.mp4" target="_blank" rel="noopener noreferrer">▶ Open the uploaded MP4 directly ↗</a>
        <iframe id="music-frame" title="Sree Rastu Shubhamastu official audio on YouTube" width="320" height="200" allow="autoplay; encrypted-media; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
        <a id="music-youtube" href="https://www.youtube.com/watch?v=lZQodaw8tr0" target="_blank" rel="noopener noreferrer">▶ Listen on YouTube ↗</a>
-       <p class="music-audio-note">If your phone blocks JavaScript-initiated audio, use the native player above. The uploaded file must be named <strong>wedding-song.mp3</strong> and remain in the same folder as this website.</p>
+       <p class="music-audio-note">If your phone blocks JavaScript-initiated audio, use the native player above. The uploaded file must be named <strong>wedding-song.mp4</strong> and remain in the same folder as this website.</p>
      </aside>
      <button id="music-toggle" class="music-toggle" type="button" aria-label="Play wedding music" aria-expanded="false" aria-controls="music-panel" title="Wedding music">♫</button>
     </main>
@@ -419,7 +419,19 @@ if($('.mini-map')) $('.mini-map').setAttribute('aria-label','Decorative map illu
 // Envelope interaction
 let opened=false;
 $('#open-envelope').addEventListener('click',()=>{
- if(opened)return;opened=true;
+ if(opened)return;
+ opened=true;
+ // This play() is made synchronously during the guest's real tap/click,
+ // so mobile browsers can treat it as user-initiated playback.
+ // Do not defer it until the envelope animation finishes.
+ const musicStart=bgMusic.play();
+ if(musicStart && typeof musicStart.catch==='function'){
+   musicStart.catch(()=>{
+     // If the browser refuses or cannot decode the MP4, the music button
+     // remains available and can open the visible fallback audio player.
+     updateMusicButton();
+   });
+ }
  $('#invitation-cover').classList.add('opened');
  window.setTimeout(()=>{$('#website').classList.add('entered');$('#website').setAttribute('aria-hidden','false');$('#invitation-cover').classList.add('dismissed');document.body.classList.remove('locked');window.scrollTo(0,0);},1380);
  window.setTimeout(()=>$('#invitation-cover').remove(),2700);
@@ -575,9 +587,9 @@ $('#copy-rsvp').addEventListener('click',async()=>{
  catch(_){const t=document.createElement('textarea');t.value=msg;document.body.append(t);t.select();document.execCommand('copy');t.remove();$('#copy-rsvp').textContent='COPIED TO CLIPBOARD';}
 });
 // Wedding music has two safe modes:
-// 1) If wedding-song.mp3 is uploaded (with permission), the audio loops while guests scroll.
+// 1) If wedding-song.mp4 is uploaded (with permission), the audio loops while guests scroll.
 // 2) Otherwise, a visible official YouTube player and direct YouTube link appear.
-// No hidden YouTube player, extraction, or forced autoplay.
+// Background music is initiated only by a guest's seal click (user gesture).
 const MUSIC_URL='https://www.youtube.com/watch?v=lZQodaw8tr0';
 const MUSIC_EMBED='https://www.youtube.com/embed/lZQodaw8tr0?playsinline=1&rel=0';
 const musicToggle=$('#music-toggle'), musicPanel=$('#music-panel'),
@@ -630,7 +642,7 @@ musicToggle.addEventListener('click',async()=>{
 
 $('#music-close').addEventListener('click',()=>setMusicPanel(false));
 $('#music-youtube').href=MUSIC_URL;
-const directMp3Link=$('#music-direct'); if(directMp3Link) directMp3Link.href='wedding-song.mp3';
+const directMp4Link=$('#music-direct'); if(directMp4Link) directMp4Link.href='wedding-song.mp4';
 bgMusic.addEventListener('play',()=>{updateMusicButton(); if(!musicPanel.hidden) setMusicPanel(false);});
 bgMusic.addEventListener('pause',updateMusicButton);
 

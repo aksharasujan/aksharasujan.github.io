@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="theme-color" content="#f5d5df" />
-  <meta name="description" content="Join Sujan and Akshara for their wedding on 11 December 2026 in Chennai. Celebrations on 9–14 December." />
+  <meta name="description" content="Join Sujan and Akshara for their wedding on 11 December 2026 at Lee Palace, Chennai, with celebrations from 9–14 December." />
   <title>Sujan &amp; Akshara | Wedding Invitation · 11 December 2026</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -74,6 +74,18 @@
 .music-panel .music-song-title{font-size:23px;line-height:1.35;margin:3px 0;color:#553050;font-weight:600}
 .music-panel .music-song-caption{margin:0 0 10px;font-size:12px;color:#71465e}
 .music-panel .music-audio-note{border-top:1px solid #e1c3cf;margin-top:12px;padding-top:10px;text-align:left;font-size:11px;line-height:1.5}
+
+/* Final customizations for Sujan & Akshara */
+.cover-names,.small-script,.hero-names,#family-name-one,#family-name-two,.footer .script{font-weight:600;letter-spacing:.01em;text-shadow:0 0 .45px currentColor,0 0 .45px currentColor}
+.name-amp{padding:0 .18em}
+.cap-a{display:inline-block;font-family:var(--serif);font-style:italic;font-weight:700;font-size:1.08em;line-height:1;transform:translateY(.02em);margin-right:-.04em}
+.hero-date-main{gap:9px;justify-content:center;align-items:flex-end;flex-wrap:wrap}
+.hero-date-main .date-day,.hero-date-main .date-year{font-size:1.62em;line-height:.92;letter-spacing:.02em;font-variant-numeric:lining-nums tabular-nums}
+.hero-date-main .date-month{font-size:1.62em;line-height:.92;letter-spacing:.015em;font-variant-numeric:lining-nums}
+.photo-upload,.event-directions,#venue,#travel-tips,.travel-tips{display:none !important}
+.event-place,.part-location{max-width:320px;margin-left:auto;margin-right:auto;line-height:1.45}
+@media(max-width:360px){.hero-date-main .date-day,.hero-date-main .date-year,.hero-date-main .date-month{font-size:1.45em}}
+
 </style>
 </head>
 <body class="locked">
@@ -195,10 +207,7 @@
       </section>
 
       <section class="rsvp section-wrap decorative" id="rsvp">
-        <p class="eyebrow">KINDLY RESPOND WITH LOVE</p>
-        <h2 class="section-title">Will You Join Us?</h2>
-        <div class="thin-rule"><span>✦</span></div>
-        <div class="rsvp-symbol monogram" data-initials>♡</div>
+                <div class="rsvp-symbol monogram" data-initials>♡</div>
         <h3 class="rsvp-title">RSVP</h3>
         <form id="rsvp-form" novalidate>
           <label class="field-label" for="guest-name">FULL NAME</label>
@@ -258,23 +267,91 @@ const WEDDING = {
     {name:'Satyanarayanam Puja',date:'Sunday, 13 December 2026',shortDate:'13 Dec',time:'8:00 AM',place:'Groom’s home, Bhimavaram',mapsQuery:'',detail:'A traditional puja with family blessings at the groom’s house.',art:'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1NjAgMzQ4Ij4KPGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJza3kiPjxzdG9wIHN0b3AtY29sb3I9IiNmZmY0ZWMiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmMmNiZDgiIHN0b3Atb3BhY2l0eT0iMCIvPjwvcmFkaWFsR3JhZGllbnQ+PGxpbmVhckdyYWRpZW50IGlkPSJnb2xkIiB4Mj0iMSIgeTI9IjEiPjxzdG9wIHN0b3AtY29sb3I9IiNlOGJkNzciLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNhZjdlNGYiLz48L2xpbmVhckdyYWRpZW50PjxmaWx0ZXIgaWQ9Indhc2giPjxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjciLz48L2ZpbHRlcj48L2RlZnM+CjxlbGxpcHNlIGN4PSIyODAiIGN5PSIxOTAiIHJ4PSIyNTUiIHJ5PSIxNDUiIGZpbGw9InVybCgjc2t5KSIvPgo8ZWxsaXBzZSBjeD0iMjgwIiBjeT0iMzEwIiByeD0iMjIyIiByeT0iMTQiIGZpbGw9IiNhOTg5NzkiIG9wYWNpdHk9Ii4xMiIgZmlsdGVyPSJ1cmwoI3dhc2gpIi8+CjxwYXRoIGQ9Ik01NSAyODcgUTExNSAxNzcgMTgwIDIzNSBRMjgwIDE3NCAzNzEgMjM1IFE0MjAgMTY3IDUwNSAyODgiIHN0cm9rZT0iI2Q3YjQ3YiIgc3Ryb2tlLXdpZHRoPSIxOSIgb3BhY2l0eT0iLjI4IiBmaWxsPSJub25lIi8+CjxlbGxpcHNlIGN4PSI2Ny41IiBjeT0iMTgwLjEiIHJ4PSI3IiByeT0iNiIgZmlsbD0iI2M2N2I5OSIgb3BhY2l0eT0iMC41OSIvPgo8ZWxsaXBzZSBjeD0iMTQ3LjciIGN5PSIxODkuMyIgcng9IjgiIHJ5PSIxMSIgZmlsbD0iI2YwYzk5ZCIgb3BhY2l0eT0iMC42OSIvPgo8ZWxsaXBzZSBjeD0iMTE2LjciIGN5PSIyNTUuOCIgcng9IjciIHJ5PSIxMiIgZmlsbD0iIzhhOWE3MCIgb3BhY2l0eT0iMC4zOCIvPgo8ZWxsaXBzZSBjeD0iOTIuOSIgY3k9IjI2MS42IiByeD0iNyIgcnk9IjE0IiBmaWxsPSIjYjVhMTdmIiBvcGFjaXR5PSIwLjUxIi8+CjxlbGxpcHNlIGN4PSI1My40IiBjeT0iMjA2LjkiIHJ4PSIxMyIgcnk9IjYiIGZpbGw9IiM4YTlhNzAiIG9wYWNpdHk9IjAuNjMiLz4KPGVsbGlwc2UgY3g9IjEzOC41IiBjeT0iMjQ4LjIiIHJ4PSIxMiIgcnk9IjE0IiBmaWxsPSIjZTNhNWFiIiBvcGFjaXR5PSIwLjU4Ii8+CjxlbGxpcHNlIGN4PSI3MC45IiBjeT0iMjY1LjgiIHJ4PSI5IiByeT0iMTAiIGZpbGw9IiNhNWI2OGYiIG9wYWNpdHk9IjAuNTEiLz4KPGVsbGlwc2UgY3g9IjE2MS4zIiBjeT0iMjE3LjEiIHJ4PSI5IiByeT0iMTEiIGZpbGw9IiM4YTlhNzAiIG9wYWNpdHk9IjAuNDQiLz4KPGVsbGlwc2UgY3g9Ijg4LjkiIGN5PSIyNjUuMyIgcng9IjE1IiByeT0iOSIgZmlsbD0iI2I1YTE3ZiIgb3BhY2l0eT0iMC40MiIvPgo8ZWxsaXBzZSBjeD0iMTM2LjAiIGN5PSIyOTEuMSIgcng9IjEyIiByeT0iMTAiIGZpbGw9IiNlM2E1YWIiIG9wYWNpdHk9IjAuMzgiLz4KPGVsbGlwc2UgY3g9IjExMC44IiBjeT0iMTkxLjkiIHJ4PSIxNiIgcnk9IjEwIiBmaWxsPSIjOGE5YTcwIiBvcGFjaXR5PSIwLjM4Ii8+CjxlbGxpcHNlIGN4PSIxNDMuNiIgY3k9IjI3NS4wIiByeD0iMTQiIHJ5PSIxNCIgZmlsbD0iIzhhOWE3MCIgb3BhY2l0eT0iMC41OSIvPgo8ZWxsaXBzZSBjeD0iMTIzLjQiIGN5PSIyNzYuNSIgcng9IjgiIHJ5PSI3IiBmaWxsPSIjOGE5YTcwIiBvcGFjaXR5PSIwLjQ3Ii8+CjxlbGxpcHNlIGN4PSI3OC43IiBjeT0iMjYyLjgiIHJ4PSIxNCIgcnk9IjkiIGZpbGw9IiNhNWI2OGYiIG9wYWNpdHk9IjAuNjYiLz4KPGVsbGlwc2UgY3g9IjM4LjQiIGN5PSIyMjIuOSIgcng9IjEyIiByeT0iMTQiIGZpbGw9IiM4YTlhNzAiIG9wYWNpdHk9IjAuNjQiLz4KPGVsbGlwc2UgY3g9IjE0NC4xIiBjeT0iMjUxLjAiIHJ4PSI4IiByeT0iOSIgZmlsbD0iI2I1YTE3ZiIgb3BhY2l0eT0iMC40NCIvPgo8ZWxsaXBzZSBjeD0iNjEuMSIgY3k9IjIyNi45IiByeD0iMTAiIHJ5PSIxMCIgZmlsbD0iI2I1YTE3ZiIgb3BhY2l0eT0iMC40NSIvPgo8ZWxsaXBzZSBjeD0iNDYuNCIgY3k9IjE5OC43IiByeD0iMTYiIHJ5PSIxMCIgZmlsbD0iI2YwYzk5ZCIgb3BhY2l0eT0iMC42NSIvPgo8ZWxsaXBzZSBjeD0iNjAuMyIgY3k9IjIwNC42IiByeD0iOSIgcnk9IjkiIGZpbGw9IiNlM2E1YWIiIG9wYWNpdHk9IjAuMjkiLz4KPGVsbGlwc2UgY3g9IjY4LjQiIGN5PSIyOTIuNiIgcng9IjEyIiByeT0iOCIgZmlsbD0iI2M2N2I5OSIgb3BhY2l0eT0iMC42MCIvPgo8ZWxsaXBzZSBjeD0iNjMuNSIgY3k9IjI3OC42IiByeD0iMTciIHJ5PSIxMyIgZmlsbD0iI2YwYzk5ZCIgb3BhY2l0eT0iMC42MSIvPgo8ZWxsaXBzZSBjeD0iMTAwLjgiIGN5PSIzMDQuMiIgcng9IjE4IiByeT0iMTEiIGZpbGw9IiNlM2E1YWIiIG9wYWNpdHk9IjAuNDUiLz4KPGVsbGlwc2UgY3g9IjExOS40IiBjeT0iMzAxLjIiIHJ4PSIxNyIgcnk9IjEzIiBmaWxsPSIjYjVhMTdmIiBvcGFjaXR5PSIwLjQzIi8+CjxlbGxpcHNlIGN4PSIzNy41IiBjeT0iMjQ5LjkiIHJ4PSI3IiByeT0iNyIgZmlsbD0iI2I1YTE3ZiIgb3BhY2l0eT0iMC40OSIvPgo8ZWxsaXBzZSBjeD0iMTA1LjAiIGN5PSIyMTkuNiIgcng9IjgiIHJ5PSIxMyIgZmlsbD0iI2YwYzk5ZCIgb3BhY2l0eT0iMC42OSIvPgo8ZWxsaXBzZSBjeD0iNTUuNiIgY3k9IjMxNi43IiByeD0iMTgiIHJ5PSIxMyIgZmlsbD0iI2I1YTE3ZiIgb3BhY2l0eT0iMC4zOCIvPgo8ZWxsaXBzZSBjeD0iMTQ3LjciIGN5PSIyMTYuMiIgcng9IjciIHJ5PSIxMCIgZmlsbD0iI2E1YjY4ZiIgb3BhY2l0eT0iMC4zOSIvPgo8ZWxsaXBzZSBjeD0iNDAyLjYiIGN5PSIyNzguNiIgcng9IjEyIiByeT0iNiIgZmlsbD0iI2I1YTE3ZiIgb3BhY2l0eT0iMC41MCIvPgo8ZWxsaXBzZSBjeD0iNTIwLjMiIGN5PSIzMDkuMCIgcng9IjEyIiByeT0iMTQiIGZpbGw9IiM4YTlhNzAiIG9wYWNpdHk9IjAuNDgiLz4KPGVsbGlwc2UgY3g9IjQ1Mi4xIiBjeT0iMzA4LjEiIHJ4PSIxMSIgcnk9IjciIGZpbGw9IiM4YTlhNzAiIG9wYWNpdHk9IjAuNjUiLz4KPGVsbGlwc2UgY3g9IjQ5MS41IiBjeT0iMTgwLjEiIHJ4PSI5IiByeT0iNyIgZmlsbD0iI2I1YTE3ZiIgb3BhY2l0eT0iMC4zNyIvPgo8ZWxsaXBzZSBjeD0iNDQ4LjkiIGN5PSIzMDguNyIgcng9IjE5IiByeT0iOSIgZmlsbD0iI2E1YjY4ZiIgb3BhY2l0eT0iMC41MiIvPgo8ZWxsaXBzZSBjeD0iNDUyLjMiIGN5PSIyMjIuNCIgcng9IjExIiByeT0iNiIgZmlsbD0iI2I1YTE3ZiIgb3BhY2l0eT0iMC42NCIvPgo8ZWxsaXBzZSBjeD0iNDY5LjQiIGN5PSIyNTYuNSIgcng9IjE4IiByeT0iMTAiIGZpbGw9IiM4YTlhNzAiIG9wYWNpdHk9IjAuMzAiLz4KPGVsbGlwc2UgY3g9IjQyMS44IiBjeT0iMjI2LjciIHJ4PSI5IiByeT0iOCIgZmlsbD0iI2YwYzk5ZCIgb3BhY2l0eT0iMC4zMSIvPgo8ZWxsaXBzZSBjeD0iNTAxLjEiIGN5PSIyNDkuMyIgcng9IjEyIiByeT0iOCIgZmlsbD0iIzhhOWE3MCIgb3BhY2l0eT0iMC40OCIvPgo8ZWxsaXBzZSBjeD0iNDAwLjgiIGN5PSIzMDUuOCIgcng9IjExIiByeT0iNiIgZmlsbD0iI2UzYTVhYiIgb3BhY2l0eT0iMC43MCIvPgo8ZWxsaXBzZSBjeD0iNDY4LjEiIGN5PSIyMzUuOCIgcng9IjEyIiByeT0iMTAiIGZpbGw9IiNjNjdiOTkiIG9wYWNpdHk9IjAuNTYiLz4KPGVsbGlwc2UgY3g9IjQ0My40IiBjeT0iMjMxLjgiIHJ4PSI5IiByeT0iMTMiIGZpbGw9IiNlM2E1YWIiIG9wYWNpdHk9IjAuNDEiLz4KPGVsbGlwc2UgY3g9IjQ2Ni42IiBjeT0iMjU2LjciIHJ4PSI3IiByeT0iMTQiIGZpbGw9IiNjNjdiOTkiIG9wYWNpdHk9IjAuNDkiLz4KPGVsbGlwc2UgY3g9IjM5Ny4xIiBjeT0iMTkyLjQiIHJ4PSIxMSIgcnk9IjciIGZpbGw9IiNiNWExN2YiIG9wYWNpdHk9IjAuMzEiLz4KPGVsbGlwc2UgY3g9IjQ3Ni4zIiBjeT0iMjI4LjQiIHJ4PSI4IiByeT0iMTQiIGZpbGw9IiNjNjdiOTkiIG9wYWNpdHk9IjAuNjMiLz4KPGVsbGlwc2UgY3g9IjQ3Mi4zIiBjeT0iMjg3LjQiIHJ4PSIxMiIgcnk9IjciIGZpbGw9IiNiNWExN2YiIG9wYWNpdHk9IjAuNjYiLz4KPGVsbGlwc2UgY3g9IjQzNy45IiBjeT0iMjA5LjMiIHJ4PSI3IiByeT0iMTIiIGZpbGw9IiM4YTlhNzAiIG9wYWNpdHk9IjAuNTciLz4KPGVsbGlwc2UgY3g9IjQ3OS42IiBjeT0iMjMxLjIiIHJ4PSIxNSIgcnk9IjEzIiBmaWxsPSIjOGE5YTcwIiBvcGFjaXR5PSIwLjMwIi8+CjxlbGxpcHNlIGN4PSI1MTcuMCIgY3k9IjI0OS40IiByeD0iMTUiIHJ5PSIxNCIgZmlsbD0iI2I1YTE3ZiIgb3BhY2l0eT0iMC4zNSIvPgo8ZWxsaXBzZSBjeD0iNDkxLjkiIGN5PSIzMDAuOCIgcng9IjgiIHJ5PSIxMCIgZmlsbD0iI2E1YjY4ZiIgb3BhY2l0eT0iMC42OCIvPgo8ZWxsaXBzZSBjeD0iMzk2LjAiIGN5PSIyOTguNSIgcng9IjExIiByeT0iNyIgZmlsbD0iI2E1YjY4ZiIgb3BhY2l0eT0iMC40NyIvPgo8ZWxsaXBzZSBjeD0iNDA0LjIiIGN5PSIyMDUuNSIgcng9IjE5IiByeT0iMTQiIGZpbGw9IiNhNWI2OGYiIG9wYWNpdHk9IjAuNDIiLz4KPGVsbGlwc2UgY3g9IjQwMy4zIiBjeT0iMTgzLjAiIHJ4PSIxMiIgcnk9IjEwIiBmaWxsPSIjOGE5YTcwIiBvcGFjaXR5PSIwLjY2Ii8+CjxlbGxpcHNlIGN4PSI0OTMuNSIgY3k9IjI4Ni41IiByeD0iOCIgcnk9IjE0IiBmaWxsPSIjZjBjOTlkIiBvcGFjaXR5PSIwLjY1Ii8+CjxlbGxpcHNlIGN4PSI1MjIuMSIgY3k9IjI2MC4yIiByeD0iOCIgcnk9IjEwIiBmaWxsPSIjZTNhNWFiIiBvcGFjaXR5PSIwLjQzIi8+CjxlbGxpcHNlIGN4PSI0NjYuMyIgY3k9IjE4NC41IiByeD0iMTEiIHJ5PSI4IiBmaWxsPSIjYTViNjhmIiBvcGFjaXR5PSIwLjMzIi8+CjxlbGxpcHNlIGN4PSI0NTguNCIgY3k9IjI3Ny42IiByeD0iMTEiIHJ5PSI2IiBmaWxsPSIjZjBjOTlkIiBvcGFjaXR5PSIwLjQxIi8+CjxwYXRoIGQ9Ik0yMjcgMTk5IFEyMzggMTgyIDI1MCAxOTkgTDI1OCAyMzggUTMwOCAyOTIgMzA2IDMwMiBMMTcxIDMwMiBRMTkyIDI2MCAyMjIgMjM4IFoiIGZpbGw9IiNkNThjOWIiIG9wYWNpdHk9Ii45MiIvPgo8cGF0aCBkPSJNMjI2IDIxMiBRMjA1IDI2MCAxNzUgMzAwIiBzdHJva2U9IiNlN2JkODUiIHN0cm9rZS13aWR0aD0iMyIgZmlsbD0ibm9uZSIgb3BhY2l0eT0iLjQiLz4KPGNpcmNsZSBjeD0iMjM4IiBjeT0iMTc2IiByPSIxNyIgZmlsbD0iI2JkOGI3MCIvPgo8cGF0aCBkPSJNMjIxIDE3MyBRMjIxIDE0OCAyNDIgMTU2IFEyNTYgMTYwIDI1NSAxNzkgUTIzOSAxNjMgMjIxIDE3MyIgZmlsbD0iIzRjMzQzOSIvPgo8cGF0aCBkPSJNMjUwIDE2NiBRMjY4IDIxMiAyNTcgMjM1IiBmaWxsPSJub25lIiBzdHJva2U9IiMzOTJiMzQiIHN0cm9rZS13aWR0aD0iMTIiIG9wYWNpdHk9Ii43NiIvPgo8cGF0aCBkPSJNMzEzIDE5NyBRMzI0IDE4MCAzMzYgMTk3IEwzNDQgMjM2IFEzOTQgMjkwIDM5MiAzMDAgTDI1NyAzMDAgUTI3OCAyNTggMzA4IDIzNiBaIiBmaWxsPSIjZDk5YTRiIiBvcGFjaXR5PSIuOTIiLz4KPHBhdGggZD0iTTMxMiAyMTAgUTI5MSAyNTggMjYxIDI5OCIgc3Ryb2tlPSIjZTdiZDg1IiBzdHJva2Utd2lkdGg9IjMiIGZpbGw9Im5vbmUiIG9wYWNpdHk9Ii40Ii8+CjxjaXJjbGUgY3g9IjMyNCIgY3k9IjE3NCIgcj0iMTciIGZpbGw9IiNiZDhiNzAiLz4KPHBhdGggZD0iTTMwNyAxNzEgUTMwNyAxNDYgMzI4IDE1NCBRMzQyIDE1OCAzNDEgMTc3IFEzMjUgMTYxIDMwNyAxNzEiIGZpbGw9IiM0YzM0MzkiLz4KPHBhdGggZD0iTTMzNiAxNjQgUTM1NCAyMTAgMzQzIDIzMyIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMzkyYjM0IiBzdHJva2Utd2lkdGg9IjEyIiBvcGFjaXR5PSIuNzYiLz4KPGNpcmNsZSBjeD0iMzg4IiBjeT0iMjkwIiByPSI2IiBmaWxsPSIjZTVkMWJhIiBvcGFjaXR5PSIuNTUiLz4KPGNpcmNsZSBjeD0iMzg4IiBjeT0iMzAwIiByPSI2IiBmaWxsPSIjZTVkMWJhIiBvcGFjaXR5PSIuNTUiLz4KPGNpcmNsZSBjeD0iMjY2IiBjeT0iMzA1IiByPSIyIiBmaWxsPSIjYjM4Y2FiIiBvcGFjaXR5PSIuNTUiLz4KPGNpcmNsZSBjeD0iMzM0IiBjeT0iMzM2IiByPSIyIiBmaWxsPSIjYjM4Y2FiIiBvcGFjaXR5PSIuNTUiLz4KPGNpcmNsZSBjeD0iMzc5IiBjeT0iMjkyIiByPSI1IiBmaWxsPSIjZDliZDg1IiBvcGFjaXR5PSIuNTUiLz4KPGNpcmNsZSBjeD0iMTI3IiBjeT0iMjkzIiByPSI0IiBmaWxsPSIjZTVkMWJhIiBvcGFjaXR5PSIuNTUiLz4KPGNpcmNsZSBjeD0iNDAzIiBjeT0iMzA4IiByPSIyIiBmaWxsPSIjZDZhY2NjIiBvcGFjaXR5PSIuNTUiLz4KPGNpcmNsZSBjeD0iMjk1IiBjeT0iMzE1IiByPSI0IiBmaWxsPSIjZDZhY2NjIiBvcGFjaXR5PSIuNTUiLz4KPGNpcmNsZSBjeD0iNDIwIiBjeT0iMzI4IiByPSI1IiBmaWxsPSIjZDliZDg1IiBvcGFjaXR5PSIuNTUiLz4KPGNpcmNsZSBjeD0iMjk4IiBjeT0iMzI3IiByPSI0IiBmaWxsPSIjZThhNmI4IiBvcGFjaXR5PSIuNTUiLz4KPGNpcmNsZSBjeD0iMjc2IiBjeT0iMzE3IiByPSI1IiBmaWxsPSIjZDZhY2NjIiBvcGFjaXR5PSIuNTUiLz4KPGNpcmNsZSBjeD0iMjIxIiBjeT0iMzAwIiByPSI1IiBmaWxsPSIjOTY4OGI5IiBvcGFjaXR5PSIuNTUiLz4KPGNpcmNsZSBjeD0iNDA3IiBjeT0iMzExIiByPSIzIiBmaWxsPSIjZDliZDg1IiBvcGFjaXR5PSIuNTUiLz4KPGNpcmNsZSBjeD0iMTY3IiBjeT0iMzAwIiByPSI3IiBmaWxsPSIjYmQ3ZGEyIiBvcGFjaXR5PSIuNTUiLz4KPGNpcmNsZSBjeD0iNDY0IiBjeT0iMzAzIiByPSI3IiBmaWxsPSIjZThhNmI4IiBvcGFjaXR5PSIuNTUiLz4KPGNpcmNsZSBjeD0iMTUyIiBjeT0iMjk0IiByPSI1IiBmaWxsPSIjYmQ3ZGEyIiBvcGFjaXR5PSIuNTUiLz4KPGNpcmNsZSBjeD0iMTYzIiBjeT0iMzI2IiByPSIzIiBmaWxsPSIjYmQ3ZGEyIiBvcGFjaXR5PSIuNTUiLz4KPGNpcmNsZSBjeD0iMzUyIiBjeT0iMzE1IiByPSI0IiBmaWxsPSIjOTY4OGI5IiBvcGFjaXR5PSIuNTUiLz4KPGNpcmNsZSBjeD0iMTQ5IiBjeT0iMzI1IiByPSI0IiBmaWxsPSIjYjM4Y2FiIiBvcGFjaXR5PSIuNTUiLz4KPGNpcmNsZSBjeD0iMjM5IiBjeT0iMzIyIiByPSI2IiBmaWxsPSIjYjM4Y2FiIiBvcGFjaXR5PSIuNTUiLz4KPGNpcmNsZSBjeD0iMzQ4IiBjeT0iMzI2IiByPSI0IiBmaWxsPSIjZTVkMWJhIiBvcGFjaXR5PSIuNTUiLz4KPGNpcmNsZSBjeD0iMTUzIiBjeT0iMzA4IiByPSIzIiBmaWxsPSIjZDZhY2NjIiBvcGFjaXR5PSIuNTUiLz4KPGNpcmNsZSBjeD0iOTgiIGN5PSIzMzYiIHI9IjIiIGZpbGw9IiNiMzhjYWIiIG9wYWNpdHk9Ii41NSIvPgo8Y2lyY2xlIGN4PSI0OTkiIGN5PSIzMzUiIHI9IjQiIGZpbGw9IiNiZDdkYTIiIG9wYWNpdHk9Ii41NSIvPgo8Y2lyY2xlIGN4PSI3OCIgY3k9IjMyOCIgcj0iMiIgZmlsbD0iI2Q2YWNjYyIgb3BhY2l0eT0iLjU1Ii8+CjxjaXJjbGUgY3g9IjM0NSIgY3k9IjI5MiIgcj0iMiIgZmlsbD0iI2JkN2RhMiIgb3BhY2l0eT0iLjU1Ii8+CjxjaXJjbGUgY3g9IjY1IiBjeT0iMzE3IiByPSIzIiBmaWxsPSIjZDZhY2NjIiBvcGFjaXR5PSIuNTUiLz4KPGNpcmNsZSBjeD0iNTIzIiBjeT0iMzA3IiByPSI2IiBmaWxsPSIjZDliZDg1IiBvcGFjaXR5PSIuNTUiLz4KPGNpcmNsZSBjeD0iMjE2IiBjeT0iMzAzIiByPSIyIiBmaWxsPSIjZTVkMWJhIiBvcGFjaXR5PSIuNTUiLz4KPGNpcmNsZSBjeD0iNTQiIGN5PSIzMjIiIHI9IjYiIGZpbGw9IiNkNmFjY2MiIG9wYWNpdHk9Ii41NSIvPgo8L3N2Zz4='},
     {name:'Reception',date:'Monday, 14 December 2026',shortDate:'14 Dec',time:'10:00 AM',place:'Function Hall, Narsapuram',mapsQuery:'',detail:'Please join us as we celebrate our marriage with family and friends.',art:'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1NjAgMzQ4Ij4KPGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJza3kiPjxzdG9wIHN0b3AtY29sb3I9IiNmZmY0ZWMiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmMmNiZDgiIHN0b3Atb3BhY2l0eT0iMCIvPjwvcmFkaWFsR3JhZGllbnQ+PGxpbmVhckdyYWRpZW50IGlkPSJnb2xkIiB4Mj0iMSIgeTI9IjEiPjxzdG9wIHN0b3AtY29sb3I9IiNlOGJkNzciLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNhZjdlNGYiLz48L2xpbmVhckdyYWRpZW50PjxmaWx0ZXIgaWQ9Indhc2giPjxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjciLz48L2ZpbHRlcj48L2RlZnM+CjxlbGxpcHNlIGN4PSIyODAiIGN5PSIxOTAiIHJ4PSIyNTUiIHJ5PSIxNDUiIGZpbGw9InVybCgjc2t5KSIvPgo8ZWxsaXBzZSBjeD0iMjgwIiBjeT0iMzEwIiByeD0iMjIyIiByeT0iMTQiIGZpbGw9IiNhOTg5NzkiIG9wYWNpdHk9Ii4xMiIgZmlsdGVyPSJ1cmwoI3dhc2gpIi8+CjxwYXRoIGQ9Ik0xMzAgMjk4IEwxMzAgOTEgTDQzMiA5MSBMNDMyIDI5OCIgc3Ryb2tlPSIjYjI4ZDgxIiBzdHJva2Utd2lkdGg9IjExIiBmaWxsPSJub25lIi8+CjxwYXRoIGQ9Ik0xMzcgOTQgUTIyNyAyMzcgMjgxIDEzNiBRMzUxIDIxOSA0MjQgOTUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2Q2OWRiMyIgc3Ryb2tlLXdpZHRoPSIzMiIgb3BhY2l0eT0iLjQ1Ii8+CjxlbGxpcHNlIGN4PSIxNDYuNSIgY3k9IjI4Mi45IiByeD0iMTIiIHJ5PSIxMCIgZmlsbD0iI2I1YTE3ZiIgb3BhY2l0eT0iMC41MyIvPgo8ZWxsaXBzZSBjeD0iMTM2LjAiIGN5PSIyNzYuMCIgcng9IjEwIiByeT0iMTEiIGZpbGw9IiM4YTlhNzAiIG9wYWNpdHk9IjAuNDEiLz4KPGVsbGlwc2UgY3g9IjE1OC42IiBjeT0iMjE5LjEiIHJ4PSIxMiIgcnk9IjEyIiBmaWxsPSIjZjBjOTlkIiBvcGFjaXR5PSIwLjU4Ii8+CjxlbGxpcHNlIGN4PSI4Ni4yIiBjeT0iMTk1LjYiIHJ4PSIxNCIgcnk9IjciIGZpbGw9IiNlM2E1YWIiIG9wYWNpdHk9IjAuNDUiLz4KPGVsbGlwc2UgY3g9IjEzNy43IiBjeT0iMjA4LjIiIHJ4PSIxNiIgcnk9IjkiIGZpbGw9IiNlM2E1YWIiIG9wYWNpdHk9IjAuNTUiLz4KPGVsbGlwc2UgY3g9IjEyMy4xIiBjeT0iMjE2LjAiIHJ4PSIxNiIgcnk9IjEyIiBmaWxsPSIjOGE5YTcwIiBvcGFjaXR5PSIwLjY2Ii8+CjxlbGxpcHNlIGN4PSIxMDYuMSIgY3k9IjI4Ni40IiByeD0iMTgiIHJ5PSI2IiBmaWxsPSIjZTNhNWFiIiBvcGFjaXR5PSIwLjM5Ii8+CjxlbGxpcHNlIGN4PSIxMDQuNyIgY3k9IjIxNS40IiByeD0iMTMiIHJ5PSI3IiBmaWxsPSIjZjBjOTlkIiBvcGFjaXR5PSIwLjMzIi8+CjxlbGxpcHNlIGN4PSI1NS42IiBjeT0iMzE4LjAiIHJ4PSI4IiByeT0iMTAiIGZpbGw9IiNmMGM5OWQiIG9wYWNpdHk9IjAuNjAiLz4KPGVsbGlwc2UgY3g9IjgzLjAiIGN5PSIyOTIuMiIgcng9IjgiIHJ5PSIxMSIgZmlsbD0iI2UzYTVhYiIgb3BhY2l0eT0iMC40NyIvPgo8ZWxsaXBzZSBjeD0iNjMuMiIgY3k9IjI1Ny4zIiByeD0iMTIiIHJ5PSIxNCIgZmlsbD0iI2M2N2I5OSIgb3BhY2l0eT0iMC41NSIvPgo8ZWxsaXBzZSBjeD0iNjMuNCIgY3k9IjIzMS4wIiByeD0iOCIgcnk9IjEyIiBmaWxsPSIjZjBjOTlkIiBvcGFjaXR5PSIwLjY1Ii8+CjxlbGxpcHNlIGN4PSI5My42IiBjeT0iMjM5LjgiIHJ4PSIxOCIgcnk9IjE0IiBmaWxsPSIjOGE5YTcwIiBvcGFjaXR5PSIwLjU0Ii8+CjxlbGxpcHNlIGN4PSIxMDAuNyIgY3k9IjIyOC4yIiByeD0iMTkiIHJ5PSIxMCIgZmlsbD0iI2YwYzk5ZCIgb3BhY2l0eT0iMC41MCIvPgo8ZWxsaXBzZSBjeD0iMTQ0LjkiIGN5PSIyMTQuMCIgcng9IjE2IiByeT0iOSIgZmlsbD0iI2I1YTE3ZiIgb3BhY2l0eT0iMC40NiIvPgo8ZWxsaXBzZSBjeD0iNTkuMiIgY3k9IjMxNy41IiByeD0iMTIiIHJ5PSI2IiBmaWxsPSIjZTNhNWFiIiBvcGFjaXR5PSIwLjUzIi8+CjxlbGxpcHNlIGN4PSIxMjMuOCIgY3k9IjMwNy4zIiByeD0iMTAiIHJ5PSIxMiIgZmlsbD0iIzhhOWE3MCIgb3BhY2l0eT0iMC4zMCIvPgo8ZWxsaXBzZSBjeD0iMTMzLjciIGN5PSIyNjQuNyIgcng9IjciIHJ5PSI3IiBmaWxsPSIjZjBjOTlkIiBvcGFjaXR5PSIwLjQzIi8+CjxlbGxpcHNlIGN4PSIxMTYuMiIgY3k9IjI1MC4zIiByeD0iMTUiIHJ5PSIxNCIgZmlsbD0iI2E1YjY4ZiIgb3BhY2l0eT0iMC42NyIvPgo8ZWxsaXBzZSBjeD0iMTU0LjEiIGN5PSIyNjEuNiIgcng9IjEyIiByeT0iMTAiIGZpbGw9IiNmMGM5OWQiIG9wYWNpdHk9IjAuNTQiLz4KPGVsbGlwc2UgY3g9IjEwNy4xIiBjeT0iMjc0LjAiIHJ4PSIxOCIgcnk9IjEyIiBmaWxsPSIjZjBjOTlkIiBvcGFjaXR5PSIwLjM3Ii8+CjxlbGxpcHNlIGN4PSIxMzcuMyIgY3k9IjI4MS44IiByeD0iMTgiIHJ5PSIxMyIgZmlsbD0iI2M2N2I5OSIgb3BhY2l0eT0iMC41NCIvPgo8ZWxsaXBzZSBjeD0iMzkuNSIgY3k9IjIxOS45IiByeD0iMTgiIHJ5PSIxMSIgZmlsbD0iI2E1YjY4ZiIgb3BhY2l0eT0iMC4zMCIvPgo8ZWxsaXBzZSBjeD0iNDYuNCIgY3k9IjI2OC4wIiByeD0iMTciIHJ5PSI2IiBmaWxsPSIjZTNhNWFiIiBvcGFjaXR5PSIwLjM3Ii8+CjxlbGxpcHNlIGN4PSI4NS4wIiBjeT0iMjAyLjIiIHJ4PSI4IiByeT0iMTMiIGZpbGw9IiNmMGM5OWQiIG9wYWNpdHk9IjAuNjgiLz4KPGVsbGlwc2UgY3g9IjExNS42IiBjeT0iMjI4LjgiIHJ4PSI5IiByeT0iNiIgZmlsbD0iI2UzYTVhYiIgb3BhY2l0eT0iMC40NSIvPgo8ZWxsaXBzZSBjeD0iMTQyLjAiIGN5PSIxODguMSIgcng9IjEzIiByeT0iOCIgZmlsbD0iI2YwYzk5ZCIgb3BhY2l0eT0iMC42OCIvPgo8ZWxsaXBzZSBjeD0iNDQzLjAiIGN5PSIyMzkuOSIgcng9IjE4IiByeT0iOSIgZmlsbD0iIzhhOWE3MCIgb3BhY2l0eT0iMC4zMiIvPgo8ZWxsaXBzZSBjeD0iNDUyLjgiIGN5PSIyOTAuNiIgcng9IjExIiByeT0iOSIgZmlsbD0iI2I1YTE3ZiIgb3BhY2l0eT0iMC4zNiIvPgo8ZWxsaXBzZSBjeD0iNDU4LjciIGN5PSIyMDguMiIgcng9IjE5IiByeT0iNiIgZmlsbD0iI2UzYTVhYiIgb3BhY2l0eT0iMC4zOSIvPgo8ZWxsaXBzZSBjeD0iNDE1LjIiIGN5PSIyNTUuMiIgcng9IjEyIiByeT0iMTMiIGZpbGw9IiM4YTlhNzAiIG9wYWNpdHk9IjAuNDgiLz4KPGVsbGlwc2UgY3g9IjQ0My42IiBjeT0iMjc3LjIiIHJ4PSI4IiByeT0iNiIgZmlsbD0iI2YwYzk5ZCIgb3BhY2l0eT0iMC42NyIvPgo8ZWxsaXBzZSBjeD0iNDI0LjYiIGN5PSIzMTEuMiIgcng9IjEzIiByeT0iOCIgZmlsbD0iI2M2N2I5OSIgb3BhY2l0eT0iMC40NSIvPgo8ZWxsaXBzZSBjeD0iNDMxLjkiIGN5PSIzMTQuOSIgcng9IjE5IiByeT0iMTQiIGZpbGw9IiNhNWI2OGYiIG9wYWNpdHk9IjAuNTMiLz4KPGVsbGlwc2UgY3g9IjQxMC44IiBjeT0iMjM5LjQiIHJ4PSIxMyIgcnk9IjE0IiBmaWxsPSIjOGE5YTcwIiBvcGFjaXR5PSIwLjYyIi8+CjxlbGxpcHNlIGN4PSI0NDcuMCIgY3k9IjMwMi4xIiByeD0iMTciIHJ5PSI5IiBmaWxsPSIjYzY3Yjk5IiBvcGFjaXR5PSIwLjM0Ii8+CjxlbGxpcHNlIGN4PSI0NzguMyIgY3k9IjIwNy4wIiByeD0iOCIgcnk9IjciIGZpbGw9IiNjNjdiOTkiIG9wYWNpdHk9IjAuNDAiLz4KPGVsbGlwc2UgY3g9IjUxMi4zIiBjeT0iMjk3LjEiIHJ4PSI3IiByeT0iNiIgZmlsbD0iI2YwYzk5ZCIgb3BhY2l0eT0iMC4yOCIvPgo8ZWxsaXBzZSBjeD0iNDg5LjMiIGN5PSIyMDUuOSIgcng9IjE3IiByeT0iNyIgZmlsbD0iI2E1YjY4ZiIgb3BhY2l0eT0iMC4zMCIvPgo8ZWxsaXBzZSBjeD0iNTE4LjciIGN5PSIzMDIuNSIgcng9IjExIiByeT0iOCIgZmlsbD0iIzhhOWE3MCIgb3BhY2l0eT0iMC40OCIvPgo8ZWxsaXBzZSBjeD0iNDA2LjYiIGN5PSIyODYuNiIgcng9IjE1IiByeT0iOSIgZmlsbD0iIzhhOWE3MCIgb3BhY2l0eT0iMC4zNCIvPgo8ZWxsaXBzZSBjeD0iNDE4LjEiIGN5PSIyNDYuMiIgcng9IjE2IiByeT0iMTEiIGZpbGw9IiNjNjdiOTkiIG9wYWNpdHk9IjAuMzgiLz4KPGVsbGlwc2UgY3g9IjUxMi44IiBjeT0iMjk1LjgiIHJ4PSIxNSIgcnk9IjEzIiBmaWxsPSIjZjBjOTlkIiBvcGFjaXR5PSIwLjYwIi8+CjxlbGxpcHNlIGN4PSIzOTYuMyIgY3k9IjI0Mi40IiByeD0iMTYiIHJ5PSIxMyIgZmlsbD0iI2UzYTVhYiIgb3BhY2l0eT0iMC4zMSIvPgo8ZWxsaXBzZSBjeD0iMzk4LjciIGN5PSIyMTkuNCIgcng9IjE3IiByeT0iMTEiIGZpbGw9IiNmMGM5OWQiIG9wYWNpdHk9IjAuNTIiLz4KPGVsbGlwc2UgY3g9IjQ2OS44IiBjeT0iMjYyLjAiIHJ4PSI5IiByeT0iMTEiIGZpbGw9IiNhNWI2OGYiIG9wYWNpdHk9IjAuNjMiLz4KPGVsbGlwc2UgY3g9IjQ1NS40IiBjeT0iMjM5LjciIHJ4PSIxMiIgcnk9IjgiIGZpbGw9IiNhNWI2OGYiIG9wYWNpdHk9IjAuNTUiLz4KPGVsbGlwc2UgY3g9IjQ1Ny4yIiBjeT0iMTg0LjUiIHJ4PSIxMSIgcnk9IjYiIGZpbGw9IiM4YTlhNzAiIG9wYWNpdHk9IjAuMzEiLz4KPGVsbGlwc2UgY3g9IjUxNS40IiBjeT0iMjE2LjkiIHJ4PSIxNCIgcnk9IjYiIGZpbGw9IiNjNjdiOTkiIG9wYWNpdHk9IjAuMzAiLz4KPGVsbGlwc2UgY3g9IjQ3MC4yIiBjeT0iMTk3LjUiIHJ4PSI4IiByeT0iMTQiIGZpbGw9IiNhNWI2OGYiIG9wYWNpdHk9IjAuMzkiLz4KPGVsbGlwc2UgY3g9IjQ0OC44IiBjeT0iMjkzLjciIHJ4PSIxMCIgcnk9IjkiIGZpbGw9IiM4YTlhNzAiIG9wYWNpdHk9IjAuNjUiLz4KPGVsbGlwc2UgY3g9IjQ5Ni43IiBjeT0iMjUwLjAiIHJ4PSIxMiIgcnk9IjExIiBmaWxsPSIjZjBjOTlkIiBvcGFjaXR5PSIwLjY5Ii8+CjxlbGxpcHNlIGN4PSI1MDkuNiIgY3k9IjI1Ny4wIiByeD0iOCIgcnk9IjkiIGZpbGw9IiNjNjdiOTkiIG9wYWNpdHk9IjAuNTMiLz4KPGVsbGlwc2UgY3g9IjQzMS4wIiBjeT0iMjk2LjciIHJ4PSI4IiByeT0iMTMiIGZpbGw9IiNjNjdiOTkiIG9wYWNpdHk9IjAuMzUiLz4KPHBhdGggZD0iTTI0MSAyMDcgUTI1MiAxOTAgMjY0IDIwNyBMMjcyIDI0NiBRMzIyIDMwMCAzMjAgMzEwIEwxODUgMzEwIFEyMDYgMjY4IDIzNiAyNDYgWiIgZmlsbD0iIzdmNGQ4NSIgb3BhY2l0eT0iLjkyIi8+CjxwYXRoIGQ9Ik0yNDAgMjIwIFEyMTkgMjY4IDE4OSAzMDgiIHN0cm9rZT0iI2U3YmQ4NSIgc3Ryb2tlLXdpZHRoPSIzIiBmaWxsPSJub25lIiBvcGFjaXR5PSIuNCIvPgo8Y2lyY2xlIGN4PSIyNTIiIGN5PSIxODQiIHI9IjE3IiBmaWxsPSIjYmQ4YjcwIi8+CjxwYXRoIGQ9Ik0yMzUgMTgxIFEyMzUgMTU2IDI1NiAxNjQgUTI3MCAxNjggMjY5IDE4NyBRMjUzIDE3MSAyMzUgMTgxIiBmaWxsPSIjNGMzNDM5Ii8+CjxwYXRoIGQ9Ik0yNjQgMTc0IFEyODIgMjIwIDI3MSAyNDMiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzM5MmIzNCIgc3Ryb2tlLXdpZHRoPSIxMiIgb3BhY2l0eT0iLjc2Ii8+CjxwYXRoIGQ9Ik0zMDEgMjEyIFEzMjAgMTk5IDMzOSAyMTIgTDM0NCAyNjkgTDMzNyAzMDcgTDMwNCAzMDcgTDI5OCAyNTkgWiIgZmlsbD0iIzMzMzY0OCIgb3BhY2l0eT0iLjkyIi8+CjxjaXJjbGUgY3g9IjMyMCIgY3k9IjE4MSIgcj0iMTciIGZpbGw9IiNiZDhiNzAiLz4KPHBhdGggZD0iTTMwMyAxNzggUTMwMyAxNTMgMzI0IDE2MSBRMzM4IDE2NSAzMzcgMTg0IFEzMjEgMTY4IDMwMyAxNzgiIGZpbGw9IiM0YzM0MzkiLz4KPGNpcmNsZSBjeD0iMzk2IiBjeT0iMjk0IiByPSI1IiBmaWxsPSIjZDZhY2NjIiBvcGFjaXR5PSIuNTUiLz4KPGNpcmNsZSBjeD0iMjU3IiBjeT0iMzAwIiByPSI0IiBmaWxsPSIjZDZhY2NjIiBvcGFjaXR5PSIuNTUiLz4KPGNpcmNsZSBjeD0iMTA4IiBjeT0iMzI3IiByPSI1IiBmaWxsPSIjYmQ3ZGEyIiBvcGFjaXR5PSIuNTUiLz4KPGNpcmNsZSBjeD0iMjkzIiBjeT0iMzE3IiByPSI3IiBmaWxsPSIjYmQ3ZGEyIiBvcGFjaXR5PSIuNTUiLz4KPGNpcmNsZSBjeD0iMzQ2IiBjeT0iMzMwIiByPSIzIiBmaWxsPSIjYjM4Y2FiIiBvcGFjaXR5PSIuNTUiLz4KPGNpcmNsZSBjeD0iMjkzIiBjeT0iMzMyIiByPSIzIiBmaWxsPSIjZDliZDg1IiBvcGFjaXR5PSIuNTUiLz4KPGNpcmNsZSBjeD0iMjg3IiBjeT0iMzI4IiByPSIyIiBmaWxsPSIjYjM4Y2FiIiBvcGFjaXR5PSIuNTUiLz4KPGNpcmNsZSBjeD0iODIiIGN5PSIzMzMiIHI9IjciIGZpbGw9IiM5Njg4YjkiIG9wYWNpdHk9Ii41NSIvPgo8Y2lyY2xlIGN4PSIzMjciIGN5PSIzMjEiIHI9IjIiIGZpbGw9IiNiMzhjYWIiIG9wYWNpdHk9Ii41NSIvPgo8Y2lyY2xlIGN4PSI0NDkiIGN5PSIzMjEiIHI9IjciIGZpbGw9IiNlNWQxYmEiIG9wYWNpdHk9Ii41NSIvPgo8Y2lyY2xlIGN4PSIzMjYiIGN5PSIyOTMiIHI9IjYiIGZpbGw9IiNlOGE2YjgiIG9wYWNpdHk9Ii41NSIvPgo8Y2lyY2xlIGN4PSIyMDQiIGN5PSIzMzQiIHI9IjMiIGZpbGw9IiNkNmFjY2MiIG9wYWNpdHk9Ii41NSIvPgo8Y2lyY2xlIGN4PSI1MTciIGN5PSIzMDQiIHI9IjUiIGZpbGw9IiNiZDdkYTIiIG9wYWNpdHk9Ii41NSIvPgo8Y2lyY2xlIGN4PSIyMDkiIGN5PSIyOTMiIHI9IjciIGZpbGw9IiNkNmFjY2MiIG9wYWNpdHk9Ii41NSIvPgo8Y2lyY2xlIGN4PSIyMjgiIGN5PSIyOTYiIHI9IjciIGZpbGw9IiNlOGE2YjgiIG9wYWNpdHk9Ii41NSIvPgo8Y2lyY2xlIGN4PSIxNzIiIGN5PSIzMjQiIHI9IjQiIGZpbGw9IiNiMzhjYWIiIG9wYWNpdHk9Ii41NSIvPgo8Y2lyY2xlIGN4PSIzNzYiIGN5PSIzMzAiIHI9IjUiIGZpbGw9IiNkOWJkODUiIG9wYWNpdHk9Ii41NSIvPgo8Y2lyY2xlIGN4PSI1MTYiIGN5PSIzMDAiIHI9IjQiIGZpbGw9IiNlNWQxYmEiIG9wYWNpdHk9Ii41NSIvPgo8Y2lyY2xlIGN4PSIyNzQiIGN5PSIzMDQiIHI9IjIiIGZpbGw9IiNlNWQxYmEiIG9wYWNpdHk9Ii41NSIvPgo8Y2lyY2xlIGN4PSI0NTUiIGN5PSIzMjUiIHI9IjYiIGZpbGw9IiNlNWQxYmEiIG9wYWNpdHk9Ii41NSIvPgo8Y2lyY2xlIGN4PSIyNDgiIGN5PSIzMDMiIHI9IjciIGZpbGw9IiM5Njg4YjkiIG9wYWNpdHk9Ii41NSIvPgo8Y2lyY2xlIGN4PSI0NzkiIGN5PSIzMjgiIHI9IjciIGZpbGw9IiM5Njg4YjkiIG9wYWNpdHk9Ii41NSIvPgo8Y2lyY2xlIGN4PSIzNjciIGN5PSIzMDciIHI9IjciIGZpbGw9IiNiZDdkYTIiIG9wYWNpdHk9Ii41NSIvPgo8Y2lyY2xlIGN4PSIzOTIiIGN5PSIzMTciIHI9IjMiIGZpbGw9IiNkNmFjY2MiIG9wYWNpdHk9Ii41NSIvPgo8Y2lyY2xlIGN4PSIxMjIiIGN5PSIyOTIiIHI9IjMiIGZpbGw9IiNkNmFjY2MiIG9wYWNpdHk9Ii41NSIvPgo8Y2lyY2xlIGN4PSIzMzgiIGN5PSIzMTEiIHI9IjYiIGZpbGw9IiNlOGE2YjgiIG9wYWNpdHk9Ii41NSIvPgo8Y2lyY2xlIGN4PSIxODciIGN5PSIyOTEiIHI9IjIiIGZpbGw9IiNkNmFjY2MiIG9wYWNpdHk9Ii41NSIvPgo8Y2lyY2xlIGN4PSI0MjEiIGN5PSIyOTIiIHI9IjYiIGZpbGw9IiNiZDdkYTIiIG9wYWNpdHk9Ii41NSIvPgo8Y2lyY2xlIGN4PSI0MTIiIGN5PSIzMDYiIHI9IjYiIGZpbGw9IiM5Njg4YjkiIG9wYWNpdHk9Ii41NSIvPgo8Y2lyY2xlIGN4PSI1MTciIGN5PSIzMDUiIHI9IjciIGZpbGw9IiNkNmFjY2MiIG9wYWNpdHk9Ii41NSIvPgo8L3N2Zz4='}
   ]
+
 };
+const originalEventArt=(WEDDING.events||[]).map(event=>event.art);
+WEDDING.venue={name:'Hotel Chennai Lee Palace', address:'5/9, Arcot Road, Karambakkam, Devi Nagar, Porur, Chennai, Tamil Nadu', mapsQuery:''};
+WEDDING.photoPaths=['photos/picone.jpeg','photos/pictwo.jpeg','photos/picthree.png','photos/picfour.jpeg'];
+WEDDING.storyCaptions=[
+ ['Together with love','OUR MEMORIES'],
+ ['Celebrating every moment','OUR MEMORIES'],
+ ['Tradition, joy and laughter','OUR MEMORIES'],
+ ['Forever begins with us','OUR MEMORIES']
+];
+WEDDING.photoAlts=[
+ 'Sujan and Akshara portrait',
+ 'Sujan and Akshara memory photo',
+ 'Sujan and Akshara candid photo',
+ 'Sujan and Akshara celebration photo'
+];
+WEDDING.events=[
+  {
+    name:'Pellikuthuru, Pellikoduku & Haldi',
+    date:'Wednesday, 9 December 2026',
+    shortDate:'9 Dec',
+    art:originalEventArt[0]||'',
+    detail:'Bride and groom celebrations are held separately with their families.',
+    parts:[
+      {title:'Bride’s Celebration', subtitle:'Mehendi / Pellikuthuru / Haldi', time:'9:05 AM', place:'Vencer Palatine Community Hall', location:'Bride’s side ceremony'},
+      {title:'Groom’s Celebration', subtitle:'Pellikoduku / Haldi', time:'9:00 AM', place:'Bhimavaram', location:'Groom’s side ceremony'}
+    ]
+  },
+  {
+    name:'Sangeeth',
+    date:'Thursday, 10 December 2026',
+    shortDate:'10 Dec',
+    art:originalEventArt[1]||'',
+    time:'6:00 PM – 9:00 PM',
+    place:'SPP Gardens, Porur, Chennai',
+    detail:'An evening of music, dance and celebration.'
+  },
+  {
+    name:'Marriage',
+    date:'Friday, 11 December 2026',
+    shortDate:'11 Dec',
+    art:originalEventArt[2]||'',
+    time:'Muhurtham · 9:00 AM – 10:30 AM',
+    place:'Hotel Chennai Lee Palace, 5/9, Arcot Road, Karambakkam, Devi Nagar, Porur, Chennai, Tamil Nadu',
+    detail:'Wedding ceremony'
+  },
+  {
+    name:'Satyanarayanam Puja',
+    date:'Sunday, 13 December 2026',
+    shortDate:'13 Dec',
+    art:originalEventArt[3]||'',
+    time:'8:00 AM',
+    place:'Bhimavaram',
+    detail:'At the groom’s house.'
+  },
+  {
+    name:'Reception',
+    date:'Monday, 14 December 2026',
+    shortDate:'14 Dec',
+    art:originalEventArt[4]||'',
+    time:'10:00 AM',
+    place:'Jaddu Brahmaji Rao Function Hall, Bhimavaram',
+    detail:'Reception with family and friends.'
+  }
+];
 const $=s=>document.querySelector(s), $$=s=>Array.from(document.querySelectorAll(s));
 const displayNames=`${WEDDING.person1.name} & ${WEDDING.person2.name}`;
 const initials='S A';
-$$('[data-names]').forEach(el=>el.textContent=displayNames);
+const styledSujan='<span class="name-word">Sujan</span>';
+const styledAkshara='<span class="name-word akshara-word"><span class="cap-a">A</span>kshara</span>';
+const styledDisplay=`${styledSujan}<span class="name-amp">&amp;</span>${styledAkshara}`;
+$$('[data-names]').forEach(el=>el.innerHTML=styledDisplay);
 $$('[data-initials]').forEach(el=>el.textContent=initials);
-$('#name-one').textContent=WEDDING.person1.name;
-$('#name-two').textContent=WEDDING.person2.name;
-$('#family-name-one').textContent=WEDDING.person1.name;
-$('#family-name-two').textContent=WEDDING.person2.name;
+$('#name-one').innerHTML=styledSujan;
+$('#name-two').innerHTML=styledAkshara;
+$('#family-name-one').innerHTML=styledSujan;
+$('#family-name-two').innerHTML=styledAkshara;
 $('#family-one-parents').textContent=WEDDING.person1.parents;
 $('#family-two-parents').textContent=WEDDING.person2.parents;
 $('#family-one-origin').textContent=WEDDING.person1.origin;
 $('#family-two-origin').textContent=WEDDING.person2.origin;
 $('#hero-city').textContent='LEE PALACE · CHENNAI';
 $$('[data-date]').forEach(el=>el.textContent='11 DECEMBER 2026');
-const heroDate=$('.hero-date-main'); if(heroDate) heroDate.innerHTML='<span class=\"date-day\">11</span><span class=\"date-rest\">DECEMBER 2026</span>';
+const heroDate=$('.hero-date-main'); if(heroDate) heroDate.innerHTML='<span class="date-day">11</span><span class="date-month">DECEMBER</span><span class="date-year">2026</span>';
 $('#hero-weekday').textContent='FRIDAY · SAVE THE DATE';
 $('#venue-date').textContent='FRIDAY, 11 DECEMBER 2026';
 $('#venue-name').textContent=WEDDING.venue.name;
@@ -282,7 +359,7 @@ $('#map-venue-name').textContent=WEDDING.venue.name;
 $('#venue-address').textContent=WEDDING.venue.address;
 $('#venue-calendar').disabled=false;
 $('#hero-calendar').disabled=false;
-// Countdown is to the START OF THE WEDDING DATE in India. The auspicious ceremony time is not yet supplied.
+// Countdown is to the start of the wedding date in India.
 const weddingDayStart=new Date('2026-12-11T00:00:00+05:30');
 function updateCountdown(){
  let diff=Math.max(0,weddingDayStart-Date.now());
@@ -291,20 +368,15 @@ function updateCountdown(){
  units.forEach((unit,i)=>{const n=Math.floor(diff/unit);$('#'+labels[i]).textContent=String(n).padStart(2,'0');diff%=unit;});
 }
 updateCountdown();setInterval(updateCountdown,1000);
-// Calendar is intentionally ALL DAY until an exact wedding/muhurtham time is provided.
 function addWeddingCalendar(){
- const params=new URLSearchParams({action:'TEMPLATE',text:'Sujan & Akshara — Wedding',dates:'20261211/20261212',details:'Muhurtham time will be shared by the families.',location:WEDDING.venue.address});
+ const params=new URLSearchParams({action:'TEMPLATE',text:'Sujan & Akshara — Wedding',dates:'20261211T033000Z/20261211T050000Z',details:'Muhurtham: 9:00 AM to 10:30 AM IST.',location:WEDDING.venue.address});
  window.open('https://calendar.google.com/calendar/render?'+params.toString(),'_blank','noopener,noreferrer');
 }
 $('#hero-calendar').addEventListener('click',addWeddingCalendar);
 $('#venue-calendar').addEventListener('click',addWeddingCalendar);
 const mapSearch=q=>'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(q);
 function openLink(url){if(url)window.open(url,'_blank','noopener,noreferrer');}
-$('#venue-directions').textContent='↗ FIND ON MAPS';
-$('#venue-directions').addEventListener('click',()=>openLink(mapSearch(WEDDING.venue.mapsQuery)));
-// The optional map graphic is decorative; Google Maps search is not a verified street address.
-$('.mini-map').setAttribute('aria-label','Decorative map illustration; use the Find on Maps button to search');
-$('.travel-tips').innerHTML='<h3>Travel & Stay</h3><p>Our wedding ceremony is in Chennai. Some family functions take place in Bhimavaram and Narsapuram. Exact household and function-hall directions will be shared by the families.</p>';
+if($('.mini-map')) $('.mini-map').setAttribute('aria-label','Decorative map illustration');
 
 // Envelope interaction
 let opened=false;
@@ -327,7 +399,7 @@ function renderStory(){
  const photo=storyPhotos[storyIndex];
  $('#story-image').hidden=!photo;$('#photo-placeholder').hidden=!!photo;
  if(photo)$('#story-image').src=photo;
- $('#story-image').alt=storyIndex===0?'Sujan and Akshara standing together in traditional outfits':'Akshara on the beach in a light floral dress';
+ $('#story-image').alt=(WEDDING.photoAlts&&WEDDING.photoAlts[storyIndex])||`Sujan and Akshara photo ${storyIndex+1}`;
  $('#story-caption').textContent=WEDDING.storyCaptions[storyIndex][0];
  $('#story-subtitle').textContent=WEDDING.storyCaptions[storyIndex][1];
  $('#story-dots').replaceChildren(...storyPhotos.map((_,i)=>{const b=document.createElement('button');b.type='button';b.className=i===storyIndex?'active':'';b.setAttribute('aria-label',`Go to photo ${i+1}`);b.addEventListener('click',()=>{storyIndex=i;renderStory()});return b;}));
@@ -336,7 +408,7 @@ function shiftStory(delta){storyIndex=(storyIndex+delta+storyPhotos.length)%stor
 $('#story-prev').addEventListener('click',()=>shiftStory(-1));
 $('#story-next').addEventListener('click',()=>shiftStory(1));
 // This photo upload is an on-device preview; not permanently saved to the website.
-$('#story-upload').addEventListener('change',e=>{const file=e.target.files[0];if(!file)return;if(storyPhotos[storyIndex]?.startsWith('blob:'))URL.revokeObjectURL(storyPhotos[storyIndex]);storyPhotos[storyIndex]=URL.createObjectURL(file);renderStory();e.target.value='';});
+const storyUpload=$('#story-upload'); if(storyUpload) storyUpload.addEventListener('change',e=>{const file=e.target.files[0];if(!file)return;if(storyPhotos[storyIndex]?.startsWith('blob:'))URL.revokeObjectURL(storyPhotos[storyIndex]);storyPhotos[storyIndex]=URL.createObjectURL(file);renderStory();e.target.value='';});
 let xStart=0;
 $('#story-slider').addEventListener('touchstart',e=>{xStart=e.touches[0].clientX},{passive:true});
 $('#story-slider').addEventListener('touchend',e=>{const dx=e.changedTouches[0].clientX-xStart;if(Math.abs(dx)>45)shiftStory(dx<0?1:-1)},{passive:true});
@@ -362,8 +434,6 @@ WEDDING.events.forEach(event=>{
      p.append(node('h4','part-title',part.subtitle));
      p.append(node('p','part-time',part.time+' · '+part.place));
      p.append(node('p','part-location',part.location));
-     if(part.mapsQuery)p.append(eventMapButton(part.mapsQuery));
-     else p.append(node('p','map-note','Exact family address to be shared'));
      partList.append(p);
    });
    card.append(partList);
@@ -371,8 +441,6 @@ WEDDING.events.forEach(event=>{
    card.append(node('p','event-meta',event.time));
    card.append(node('p','event-place',event.place));
    card.append(node('p','event-extra',event.detail));
-   if(event.mapsQuery)card.append(eventMapButton(event.mapsQuery));
-   else card.append(node('p','map-note','Exact location details to be shared'));
  }
  eventList.append(card);
 });
